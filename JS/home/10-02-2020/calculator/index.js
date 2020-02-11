@@ -1,33 +1,72 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Calculator Project</title>
-    <link rel="stylesheet" href="style.css"  type="text/css" >
-    <script src="index.js" type="text/javascript"></script>
-    </head>
-    <body>
-        
-    
-    <form name="case">
-      <input name="display" id="display" value="">
-    
-        <input type="button" class="digit" value="1" onclick="run1()">
-        <input type="button" class="digit" value="2" onclick="run2()">
-        <input type="button" class="digit" value="3" onclick="run3()">
-        <input type="button" id="plus" 	class="oper" 	value="+"  onclick="runPlus()">
-        <input type="button" class="digit" value="4" onclick="run4()">
-        <input type="button" class="digit" value="5" onclick="run5()">
-        <input type="button" class="digit" value="6" onclick="run6()">
-        <input type="button" id="minus" 	class="oper" 	value="-" onclick="runMinus()" >
-        <input type="button" class="digit" value="7" onclick="run7()">
-        <input type="button" class="digit" value="8" onclick="run8()">
-        <input type="button" class="digit" value="9" onclick="run9()">
-        <input type="button" id="divide" 	class="oper" 	value="/" onclick="runDivide()" >
-        <input type="button" class="digit" value="0" onclick="run0()">
-        <input type="button" id="clearMem" class="oper" value="C" onclick="runC()">
-        <input type="button" id="equal" 	class="oper"	value="=" onclick="runEquals()">
-        <input type="button" id="multiply" 	class="oper" 	value="*" onclick="runMultiply()">
-    
-    </div>
-    </div>
-    </body>
+function run1(){
+
+	document.case.display.value += "1"
+};
+function run2(){
+
+	document.case.display.value += "2"
+};
+function run3(){
+
+	document.case.display.value += "3"
+};
+function run4(){
+
+	document.case.display.value += "4"
+};
+function run5(){
+
+	document.case.display.value += "5"
+};
+
+function run6(){
+
+	document.case.display.value += "6"
+};
+
+function run7(){
+
+	document.case.display.value += "7"
+};
+
+function run8(){
+
+	document.case.display.value += "8"
+};
+
+function run9(){
+
+	document.case.display.value += "9"
+};
+
+function run0(){
+
+	document.case.display.value += "0"
+};
+function runPlus(){
+
+	document.case.display.value += "+"
+};
+function runMinus(){
+
+	document.case.display.value += "-"
+};
+function runDivide(){
+
+	document.case.display.value += "/"
+};
+function runMultiply(){
+
+	document.case.display.value += "*"
+};
+
+function runC(){
+
+	document.case.display.value = ""
+};
+
+
+function runEquals() {
+	var equals = eval(document.case.display.value)
+	document.case.display.value = equals;
+}
