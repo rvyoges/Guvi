@@ -1,0 +1,19 @@
+<!--
+Simple Event handler:
+---------------------
+Summary: Create a div and change the color onmouse over
+Time to complete: About 15 minutes -->
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+  <script>
+  var division = document.createElement("DIV");
+division.innerHTML = "This is a div tag created via Javascript Function";
+division.addEventListener("mouseover", mouseOver);
+function mouseOver() {division.style.color = "red";}
+document.body.appendChild(division);
+</script>
+  </body>
+</html>
